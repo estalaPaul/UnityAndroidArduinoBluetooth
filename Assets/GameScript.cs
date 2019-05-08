@@ -19,22 +19,22 @@ public class GameScript : MonoBehaviour
         switch (connectionState)
         {
             case 0:
-                connectionResult = "Tu dispositivo no soporta comunicaciones por Bluetooth.";
+                connectionResult = "Your device doesn't support Bluetooth communications.";
                 break;
             case 1:
-                connectionResult = "Necesitas prender el Bluetooth en tu celular.";
+                connectionResult = "Your Bluetooth is off.";
                 break;
             case 2:
-                connectionResult = "Necesitas vincular el dispositivo antes de poder utilizarlo.";
+                connectionResult = "You must pair the desired device before attempting to connect to it.";
                 break;
             case 3:
-                connectionResult = "No se pudo conectar al dispositivo, vuelve a intentarlo.";
+                connectionResult = "The device you want to connect to is currently unavailable.";
                 break;
             case 4:
-                connectionResult = "Conexión exitosa.";
+                connectionResult = "Connection successful.";
                 break;
             default:
-                connectionResult = "Resultado inesperado.";
+                connectionResult = "Unexpected Result.";
                 break;
         }
         connectionText.text = connectionResult;
