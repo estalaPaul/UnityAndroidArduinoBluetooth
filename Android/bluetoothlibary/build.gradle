@@ -37,11 +37,11 @@ dependencies {
 }
 
 task exportJar(type: Copy) {
-    from('build/intermediates/packaged-classes/debug/classes.jar')
-    into('../../BluetoothTest/Assets/Plugins/Android')
+    from('route-to-exported-jar-file')
+    into('route-to-android-assets-folder-in-unity-project')
     rename('classes.jar', 'BluetoothPlugin.jar')
 }
 task deleteOldJar(type: Delete) {
-    delete '../../BluetoothTest/Assets/Plugins/Android/BluetoothPlugin.jar'
+    delete 'same-route-as-into-but-with-filename'
 }
 exportJar.dependsOn(deleteOldJar)
