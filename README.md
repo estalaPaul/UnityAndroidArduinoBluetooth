@@ -13,7 +13,7 @@ Plugin that allows communication from Arduino to Unity Android game through Blue
 
 The following explanation is made supposing that you already have a Arduino circuit created and ready to connect to your game. If that is not the case, there is an example circuit in the [Testing](#testing) section. Otherwise, follow on.  
 
-To use this, you only need to copy the content of the Assets directory in this repository into your project Assets folder. In those assets, there is an example GameScript included to give an example of how this plugin can be used. For further details, consult the wiki.
+To use this, you only need to copy the content of the Assets directory in this repository into your project Assets folder. In those assets, there is an example GameScript included to give an example of how this plugin can be used. For further details, consult the [wiki](https://github.com/estalaPaul/UnityAndroidArduinoBluetooth/wiki).
 
 ## Testing
 
